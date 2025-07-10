@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="0x02_8.cpp">
+    <ClCompile Include="0x02_12.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
