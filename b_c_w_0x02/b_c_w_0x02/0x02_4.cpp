@@ -1,11 +1,8 @@
-#include <iostream>
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS	
+#include <stdio.h>
 
 int main()
 {
-	cout << "\\    /\\" << '\n';
-	cout << " )  ( \')" << '\n';
-	cout << "(  /  )" << '\n';
-	cout << " \\(__)|";
+	printf("Hello World!");
 	return 0;
 }
