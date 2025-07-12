@@ -11,7 +11,12 @@ int main(void)
 	cin >> a;
 	for (i = 0; i < a; i++)
 	{
-		for (j = 0; j < a-i; j++)
+		for (k = 0; k < i; k++)
+		{
+			if(k < a + 1)
+			cout << " ";
+		}
+		for (j = 0; j < a - i; j++)
 		{
 			cout << "*";
 		}
