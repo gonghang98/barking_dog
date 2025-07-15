@@ -3,13 +3,15 @@
 #include <algorithm>
 using namespace std;
 
+int arr[100001] = { 0 };
+bool save_num[2000001] = {  };
 int main(void)
 {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
 	int a,i,x,j,b = 0;
-	int arr[1000000] = { 0 };
+	
 	cin >> a;
 	for (i = 0; i < a; i++)
 	{
@@ -17,17 +19,15 @@ int main(void)
 	}
 
 	cin >> x;
-
 	for (i = 0; i < a; i++)
 	{
-		for (j = i+1; j < a; j++)
+		if (x - arr[i] > 0 && save_num[x-arr[i]])
 		{
-			if ((arr[i] + arr[j]) == x)
-			{
-				b++;
-			}
+			b++;
 		}
+		save_num[arr[i]] = true;
 	}
+
 	cout << b;
 	return 0;
 }
