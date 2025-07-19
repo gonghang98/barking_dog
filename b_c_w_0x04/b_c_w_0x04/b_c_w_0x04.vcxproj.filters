@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="insert_erase.cpp">
+    <ClCompile Include="0x04_p.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

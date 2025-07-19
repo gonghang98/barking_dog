@@ -64,6 +64,21 @@ void erase_test() {
 int main(void) {
     fill(pre, pre + MX, -1);
     fill(nxt, nxt + MX, -1);
-    insert_test();
-    erase_test();
+    
+    insert(0, 10); // 10(address=1)
+
+    insert(0, 30); // 30(address=2) 10
+
+    insert(2, 40); // 30 40(address=3) 10
+
+    insert(1, 20); // 30 40 10 20(address=4)
+
+    insert(4, 70); // 30 40 10 20 70(address=5)
+    for (int i = 0; i < 5; i++)
+    {
+        cout << dat[i];
+    }
+    
+    //insert_test();
+    //erase_test();
 }
